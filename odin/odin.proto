@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option go_package = "./odin;pb";
+
+service Instance {
+  rpc CreateStudent(CreateInstanceReq) returns (CreateInstanceRsp);
+}
+
+message CreateInstanceReq {
+  string  name = 1 ;
+}
+
+message CreateInstanceRsp {
+  int64 code = 1 ;
+}
