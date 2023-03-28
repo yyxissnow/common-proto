@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c05895d-5cc3-41fd-a26d-f650cacbcc7b" name="Changes" comment="test" />
+    <list default="true" id="8c05895d-5cc3-41fd-a26d-f650cacbcc7b" name="Changes" comment="update:add odin core proto" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,7 +59,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="update:add odin core proto" />
+    <option name="LAST_COMMIT_MESSAGE" value="update:add odin core proto" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>

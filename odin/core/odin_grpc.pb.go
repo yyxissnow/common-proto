@@ -43,21 +43,19 @@ func (c *odinCoreClient) CreateInstance(ctx context.Context, in *CreateInstanceR
 }
 
 // OdinCoreServer is the server API for OdinCore service.
-// All implementations must embed UnimplementedOdinCoreServer
+// All implementations should embed UnimplementedOdinCoreServer
 // for forward compatibility
 type OdinCoreServer interface {
 	CreateInstance(context.Context, *CreateInstanceReq) (*CreateInstanceRsp, error)
-	mustEmbedUnimplementedOdinCoreServer()
 }
 
-// UnimplementedOdinCoreServer must be embedded to have forward compatible implementations.
+// UnimplementedOdinCoreServer should be embedded to have forward compatible implementations.
 type UnimplementedOdinCoreServer struct {
 }
 
 func (UnimplementedOdinCoreServer) CreateInstance(context.Context, *CreateInstanceReq) (*CreateInstanceRsp, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method CreateInstance not implemented")
 }
-func (UnimplementedOdinCoreServer) mustEmbedUnimplementedOdinCoreServer() {}
 
 // UnsafeOdinCoreServer may be embedded to opt out of forward compatibility for this service.
 // Use of this interface is not recommended, as added methods to OdinCoreServer will
